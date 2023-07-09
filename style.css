@@ -1,0 +1,143 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 60%;
+    padding: 10px;
+    background-color: #f1b4b4;
+    text-align: center;
+    border-radius: 12px;
+    display: grid;
+    grid-template: repeat(2, auto) auto / 1fr;
+    gap: 15px;
+}
+
+img {
+    width: 80px;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+form input {
+    padding: 5px 8px;
+}
+
+form input[type="text"] {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 75%;
+}
+
+@media (max-width: 768px) {
+    form input[type="text"] {
+        width: 100%;
+    }
+}
+
+form input[type="submit"] {
+    background-color: blueviolet;
+    color: white;
+    font-weight: 700;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+    width: 25%;
+}
+
+@media (max-width: 768px) {
+    form input[type="submit"] {
+        width: 80%;
+        border-radius: 8px;
+    }
+}
+
+form input[type="submit"]:hover {
+    background-color: blue;
+}
+
+.weather_box {
+    /* margin: 15px 0 0; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.weather_box .imgs {
+    width: 100%;
+    text-align: center;
+}
+
+.weather_box .imgs img {
+    width: 30%;
+}
+
+.weather_box #temp {
+    font-size: 25px;
+    font-weight: 900;
+    color: #f05;
+}
+
+.weather_box #sun {
+    font-size: 18px;
+    font-weight: normal;
+    color: #444;
+}
+
+.weather_choice {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.weather_choice > p {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.weather_choice p span {
+    color: red;
+    font-size: 18px;
+}
+
+
+
+
+
